@@ -14,6 +14,8 @@ This notebook reads in `bgg_stats_all.csv`, which is a concatenation of all CSVs
 
 It deletes the image columns, and drops rows that do not have a publication year or metadata.
 
+Result is exported to `data/cleaned.csv`.
+
 ## Credits
 
 ### Contributors
