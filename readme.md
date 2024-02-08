@@ -91,6 +91,12 @@ This notebook generates a chart of "Game Category by Publication Year" and a
 chart of "Game Mechanic by Publication Year" to see how these trends have
 changed over time.
 
+### category_vs_mechanics.ipynb
+
+This notebook analyzes the relationship between categories and mechanics. It
+generates a heatmap showing the number of games in which a category/mechanic
+pair is featured.
+
 ## Credits
 
 ### Contributors
