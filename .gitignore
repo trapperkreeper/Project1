@@ -162,3 +162,4 @@ cython_debug/
 # Data files too large for GitHub
 data/bgg_stats_all.csv
 data/cleaned.csv
+data/cleaned2.csv

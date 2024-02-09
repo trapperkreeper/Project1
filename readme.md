@@ -74,11 +74,15 @@ The last code cell in this notebook combines all the individual CSVs into a sing
 #### bgg_refine.ipynb
 This notebook reads in `data/bgg_stats_all.csv` and cleans up the raw data.
 
-It deletes the image columns, and drops rows that do not have a publication year or metadata.
+Steps 1-5 perform the following:
 
-Metadata contained in the `link` column is parsed out into their own respective columns.
+* Delete the image columns, and drop rows that do not have a publication year or metadata.
+* Metadata contained in the `link` column is parsed out into their own respective columns.
+* The result is exported to `data/cleaned.csv`.
 
-The result is exported to `data/cleaned.csv`.
+Step 6 can be run independently of steps 2-5, as long as `data/cleaned.csv` exists.
+It groups the categories and mechanics of each board game according to the tables
+above, and removes any resulting duplicates. The result is exported to `data/cleaned2.csv`.
 
 ## EDA
 
