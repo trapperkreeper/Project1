@@ -163,3 +163,4 @@ cython_debug/
 data/bgg_stats_all.csv
 data/cleaned.csv
 data/cleaned2.csv
+
