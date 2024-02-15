@@ -98,8 +98,9 @@ changed over time.
 ### category_vs_mechanics.ipynb
 
 This notebook analyzes the relationship between categories and mechanics. It
-generates a heatmap showing the number of games in which a category/mechanic
-pair is featured.
+generates some line graphs analyzing mechanics over time as well as narrowing down to the last decade.
+It also contains playtime analysis on avg playtime per mechanic as well as expected forecast playtime over the next 10 years.
+It uses the data/cleaned.csv file to run all the code and graphs are saved to the charts/ folder.
 
 ## Credits
 
