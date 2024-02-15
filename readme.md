@@ -7,6 +7,9 @@ This project aims to analyze data from the [Board Game Geek API](https://boardga
 ### Questions
 
 What are some insights related to the language dependency of games?
+How have game mechanics evolved or changed in popularity over time?
+How much are people playing board games today?
+What is the financial incentive to publish boardgames in terms of industry size? And how can mechanics, categories and expected future trends assist in making this decision?
 
 ### Findings
 
@@ -17,6 +20,18 @@ not language dependent being produced and endures as a trend
 A small % of games being produced use extensive amount (13% in 2020s and 17% 2020's) although there is preference for them among the top ranking.
 There is room for creators that are focusing on games requiring extensive language in order to play.
 Not dependent seems to always remain popular across the board.
+
+Mechanics have not changed too much overtime in terms of which ones are the most used. The only notable change
+is the rise of the solo gamer mechanic which has jumped significantly over the past 5 years, to the point that 
+boardgame publishers would do well to keep in mind as a selling point for new releases if they include a solo mode.
+
+In terms of average board game playtime, the trend as well as future forecast is trending higher. Even discounting the
+outlier because of the COVID-19 pandemic, the trend after has still continued increasing compared to the years before the pandemic
+signifying that board games are still a very large pastime for people.
+
+There is significant financial incentive for board games to be an industry where people may want to invest.
+The revenue is expected to double over the next 6 years.
+
 
 ## Methodology
 
