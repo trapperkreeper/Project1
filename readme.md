@@ -6,10 +6,10 @@ This project aims to analyze data from the [Board Game Geek API](https://boardga
 
 ### Questions
 
-What are some insights related to the language dependency of games?
-How have game mechanics evolved or changed in popularity over time?
-How much are people playing board games today?
-What is the financial incentive to publish boardgames in terms of industry size? And how can mechanics, categories and expected future trends assist in making this decision?
+What are some insights related to the language dependency of games?  
+How have game mechanics evolved or changed in popularity over time?  
+How much are people playing board games today?  
+What is the financial incentive to publish boardgames in terms of industry size? And how can mechanics, categories and expected future trends assist in making this decision?  
 
 ### Findings
 
