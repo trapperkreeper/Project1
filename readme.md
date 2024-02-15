@@ -6,11 +6,17 @@ This project aims to analyze data from the [Board Game Geek API](https://boardga
 
 ### Questions
 
-TBD
+What are some insights related to the language dependency of games?
 
 ### Findings
 
-TBD
+Language Related insights:
+very popular games are significantly language dense (extensively) but not fully.
+followed by lang that are not dependent
+not language dependent being produced and endures as a trend
+A small % of games being produced use extensive amount (13% in 2020s and 17% 2020's) although there is preference for them among the top ranking.
+There is room for creators that are focusing on games requiring extensive language in order to play.
+Not dependent seems to always remain popular across the board.
 
 ## Methodology
 
@@ -84,6 +90,9 @@ Step 6 can be run independently of steps 2-5, as long as `data/cleaned.csv` exis
 It groups the categories and mechanics of each board game according to the tables
 above, and removes any resulting duplicates. The result is exported to `data/cleaned2.csv`.
 
+#### language_related.ipynb
+generated the df for language related info, pulling from the data/cleaned2.csv
+
 ## EDA
 
 Notebooks used for exploratory data analysis are organized into the `eda`
@@ -101,6 +110,14 @@ This notebook analyzes the relationship between categories and mechanics. It
 generates some line graphs analyzing mechanics over time as well as narrowing down to the last decade.
 It also contains playtime analysis on avg playtime per mechanic as well as expected forecast playtime over the next 10 years.
 It uses the data/cleaned.csv file to run all the code and graphs are saved to the charts/ folder.
+
+### language_dependencies_eda
+Assess language dependency aspect of top ranking games and games across decades.
+Caveats:
+Language information based on poll; gamer's opinion
+required full dependency of language game
+Limited data: 18542 games across 1960s - 2020s with polling information.
+
 
 ## Credits
 
