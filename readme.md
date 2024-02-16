@@ -6,31 +6,36 @@ This project aims to analyze data from the [Board Game Geek API](https://boardga
 
 ### Questions
 
-What are some insights related to the language dependency of games?  
-How have game mechanics evolved or changed in popularity over time?  
-How much are people playing board games today?  
-What is the financial incentive to publish boardgames in terms of industry size? And how can mechanics, categories and expected future trends assist in making this decision?  
+1. What are some insights related to the language dependency of games?
+2. How have game mechanics evolved or changed in popularity over time?
+3. How much are people playing board games today?
+4. What is the financial incentive to publish boardgames in terms of industry size? How can mechanics, categories, and expected future trends assist in making this decision?
 
 ### Findings
 
-Language Related insights:
-very popular games are significantly language dense (extensively) but not fully.
-followed by lang that are not dependent
-not language dependent being produced and endures as a trend
-A small % of games being produced use extensive amount (13% in 2020s and 17% 2020's) although there is preference for them among the top ranking.
-There is room for creators that are focusing on games requiring extensive language in order to play.
-Not dependent seems to always remain popular across the board.
+#### Language Dependencies:
+* Very popular games are significantly language dense (extensively) but not fully, followed by games that are not dependent.
 
-Mechanics have not changed too much overtime in terms of which ones are the most used. The only notable change
-is the rise of the solo gamer mechanic which has jumped significantly over the past 5 years, to the point that 
-boardgame publishers would do well to keep in mind as a selling point for new releases if they include a solo mode.
+* There's an increasing trend of games that are not language dependent being produced, increasing sharply starting in the 1990s.
 
-In terms of average board game playtime, the trend as well as future forecast is trending higher. Even discounting the
-outlier because of the COVID-19 pandemic, the trend after has still continued increasing compared to the years before the pandemic
-signifying that board games are still a very large pastime for people.
+* A small percentage of games being produced were extensively language dependent (13% in 2020s and 17% 2020s) although there is preference for them among the top-ranking games.
 
-There is significant financial incentive for board games to be an industry where people may want to invest.
-The revenue is expected to double over the next 6 years.
+* There is room for creators that are focusing on games requiring extensive language dependency in order to play.
+
+* Not dependent seems to always remain popular across the board.
+
+#### Mechanics:
+* Mechanics have not changed too much over time in terms of which ones are the most used.
+
+* The few notable changes include the rise of solo play modes and cooperative games, and a decline in the roll-and-move mechanic.
+
+#### Playtime:
+* In terms of average board game playtime, the trend as well as future forecast is trending higher. Even discounting the outliers because of the COVID-19 pandemic, the trend after has still continued increasing compared to the years before the pandemic, signifying that board games are still a very large pastime for people.
+
+#### Market:
+* There is significant financial incentive for board games to be an industry where people may want to invest.
+
+* The revenue is expected to double over the next 6 years.
 
 
 ## Methodology
@@ -106,12 +111,17 @@ It groups the categories and mechanics of each board game according to the table
 above, and removes any resulting duplicates. The result is exported to `data/cleaned2.csv`.
 
 #### language_related.ipynb
-generated the df for language related info, pulling from the data/cleaned2.csv
+This notebook generates the DataFrame for language-related info, pulling from `data/cleaned2.csv`.
 
 ## EDA
 
 Notebooks used for exploratory data analysis are organized into the `eda`
 folder.
+
+### bggeek_ratings.ipynb
+
+This notebook uses the `boardgame_ranks.csv` data file to examine the
+user-submitted ratings of board games over the publication years.
 
 ### cat_mech_by_year.ipynb
 
@@ -122,16 +132,26 @@ changed over time.
 ### category_vs_mechanics.ipynb
 
 This notebook analyzes the relationship between categories and mechanics. It
-generates some line graphs analyzing mechanics over time as well as narrowing down to the last decade.
-It also contains playtime analysis on avg playtime per mechanic as well as expected forecast playtime over the next 10 years.
-It uses the data/cleaned.csv file to run all the code and graphs are saved to the charts/ folder.
+generates some line graphs analyzing mechanics over time as well as narrowing
+down to the last decade. It also contains playtime analysis on avg playtime per
+mechanic as well as expected forecast playtime over the next 10 years. It uses
+the `data/cleaned.csv` file to run all the code and graphs are saved to the
+`charts/` folder.
 
-### language_dependencies_eda
-Assess language dependency aspect of top ranking games and games across decades.
+### language_dependencies_eda.ipynb
+
+Assesses language dependency aspect of top ranking games and games across
+decades.
+
 Caveats:
-Language information based on poll; gamer's opinion
-required full dependency of language game
-Limited data: 18542 games across 1960s - 2020s with polling information.
+* Language information is based on an opt-in poll of users, and is subjective
+* Required full dependency of language game
+* Limited data: 18542 games across 1960s - 2020s with polling information.
+
+### mechanics - category.ipynb
+
+This notebook further examines board game categories, and also uses Prophet to
+predict future trends in playtime of board games.
 
 
 ## Credits
